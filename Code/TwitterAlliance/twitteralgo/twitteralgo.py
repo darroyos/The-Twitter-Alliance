@@ -167,7 +167,7 @@ def fetch_relationships(top100, api):
     user_accounts = list(top100)
     curr_user_index = 0
     next_user_index = 0
-    limit = 5
+    limit = len(user_accounts)
 
     while (curr_user_index < limit):
         source_user = user_accounts[curr_user_index]
