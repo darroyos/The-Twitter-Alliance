@@ -8,6 +8,6 @@
 import scrapy
 
 
-class TwitterAllianceItem(scrapy.Item):
+class TwCounterSpiderItem(scrapy.Item):
     user_accounts = scrapy.Field()
     filename = scrapy.Field()

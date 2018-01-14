@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for TwitterAlliance project
+# Scrapy settings for TwCounterSpider project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,14 +9,14 @@
 #     https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'TwitterAlliance'
+BOT_NAME = 'TwCounterSpider'
 
-SPIDER_MODULES = ['TwitterAlliance.spiders']
-NEWSPIDER_MODULE = 'TwitterAlliance.spiders'
+SPIDER_MODULES = ['TwCounterSpider.spiders']
+NEWSPIDER_MODULE = 'TwCounterSpider.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'TwitterAlliance (+http://www.yourdomain.com)'
+#USER_AGENT = 'TwCounterSpider (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
@@ -47,13 +47,13 @@ ROBOTSTXT_OBEY = False
 # Enable or disable spider middlewares
 # See https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'TwitterAlliance.middlewares.TwitterAllianceSpiderMiddleware': 543,
+#    'TwCounterSpider.middlewares.TwCounterSpiderSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'TwitterAlliance.middlewares.TwitterAllianceDownloaderMiddleware': 543,
+#    'TwCounterSpider.middlewares.TwCounterSpiderDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -65,7 +65,7 @@ ROBOTSTXT_OBEY = False
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    'TwitterAlliance.pipelines.TwitterAlliancePipeline': 300,
+    'TwCounterSpider.pipelines.TwCounterSpiderPipeline': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)

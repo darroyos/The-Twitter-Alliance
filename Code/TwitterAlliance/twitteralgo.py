@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import sys
+import os
 import getopt
 import logging
 import tweepy
@@ -60,9 +61,10 @@ class AlgoMode(Enum):
 CONSUMER_TOKEN = 'fCAAKDacsyiASiJHNnRMtUmho'
 CONSUMER_SECRET = 'HlH1LY8rZq1CKPHw98S7DQWrlQU32wLBW9Lf5Uoiu9foGSCgjB'
 
-EXPORT_FOLER = 'twitteralgo'
+INPUT_FOLER = 'top_users'
+EXPORT_FOLER = 'results'
 ACCESS_TOKEN_FILE = 'access_token.txt'
-FRIENDSHIP_FILE = 'friendships.txt'
+FRIENDSHIP_FILE = 'friendships.txt'  # default filename
 
 logging.basicConfig(
     filename="twalgo.log",
@@ -74,6 +76,7 @@ logging.basicConfig(
 def main(argv):
     filename = None
     mode = AlgoMode.MUTUAL_FOLLOWS  # default algorithm mode
+    global FRIENDSHIP_FILE  # global keyword needed for changing its value
 
     try:
         opts, args = getopt.getopt(argv, "hi:", ["help", "input=", "all", ])
@@ -83,6 +86,7 @@ def main(argv):
     for opt, arg in opts:
         if opt in ("-i", "--input"):
             filename = arg
+            FRIENDSHIP_FILE = filename[:-4] + '_friendships.txt'
         elif opt in ("--all"):
             mode = AlgoMode.ALL_FOLLOWS
         elif opt in ("-h", "--help"):
@@ -144,12 +148,15 @@ def read_accounts_file(filename):
 
     top100 = {}
 
-    with open(filename, 'r') as file:
+    script_dir = os.path.dirname(__file__)  # absolute dir the script is in
+    INPUT_FILE = INPUT_FOLER + '/' + filename
+
+    with open(os.path.join(script_dir, INPUT_FILE), 'r') as file:
         for user in file:
             user = user.strip()
             top100.update({user: []})
 
-    logging.info("Twitter accounts file '%s' readed. Number of accounts: %i" % (filename, len(top100)))
+    logging.info("Twitter accounts file '%s' readed. Number of accounts: %i" % (INPUT_FILE, len(top100)))
 
     return top100
 
@@ -167,11 +174,11 @@ def fetch_relationships(top100, api):
     user_accounts = list(top100)
     curr_user_index = 0
     next_user_index = 0
-    limit = len(user_accounts)
+    limit = 3
 
     while (curr_user_index < limit):
         source_user = user_accounts[curr_user_index]
-        logging.info("+ CURRENT SOURCE USER: %s" % source_user)
+        logging.info("CURRENT SOURCE USER: %s" % source_user)
         while (next_user_index < limit):
             if (curr_user_index != next_user_index):
                 target_user = user_accounts[next_user_index]
@@ -184,7 +191,7 @@ def fetch_relationships(top100, api):
                     the least number of API request (rate limit...)
                     """
                     top100.get(source_user).append(target_user)
-                    logging.info("+ Friendship with %s detected! Source user %s" % (target_user, source_user))
+                    logging.info("Friendship with %s detected! Source user %s" % (target_user, source_user))
                 else:
                     friends = api.show_friendship(source_screen_name=source_user,
                                                   target_screen_name=target_user)
@@ -193,7 +200,7 @@ def fetch_relationships(top100, api):
                     if friends[0].following and friends[1].following:
                         # they're folling each other
                         top100.get(source_user).append(target_user)
-                        logging.info("+ Friendship with %s detected! Source user %s" % (target_user, source_user))
+                        logging.info("Friendship with %s detected! Source user %s" % (target_user, source_user))
 
             total_completed = ((curr_user_index * limit +
                                next_user_index) / (limit *
@@ -217,7 +224,7 @@ def fetch_all_relationships(top100, api):
 
     while (curr_user_index < limit):
         source_user = user_accounts[curr_user_index]
-        logging.info("+ CURRENT SOURCE USER: %s" % source_user)
+        logging.info("CURRENT SOURCE USER: %s" % source_user)
         while (next_user_index < limit):
             if (curr_user_index != next_user_index):
                 target_user = user_accounts[next_user_index]
@@ -230,10 +237,10 @@ def fetch_all_relationships(top100, api):
 
                     if friends[0].following:
                         top100.get(source_user).append(target_user)
-                        logging.info('+ Source account: %s follows %s' % (source_user, target_user))
+                        logging.info('Source account: %s follows %s' % (source_user, target_user))
                     if friends[1].following:
                         top100.get(target_user).append(source_user)
-                        logging.info('+ Target account: %s follows %s' % (target_user, source_user))
+                        logging.info('Target account: %s follows %s' % (target_user, source_user))
 
             total_completed = ((curr_user_index * limit +
                                next_user_index) / (limit *
@@ -256,7 +263,10 @@ def save_to_file(top100):
 
     user_accounts = list(top100)
 
-    with open(FRIENDSHIP_FILE, 'w') as file:
+    script_dir = os.path.dirname(__file__)  # absolute dir the script is in
+    EXPORT_FILE = EXPORT_FOLER + '/' + FRIENDSHIP_FILE
+
+    with open(os.path.join(script_dir, EXPORT_FILE), 'w') as file:
         for user in user_accounts:
             friends = top100.get(user)
             file.write(user + ': ')
@@ -298,7 +308,9 @@ def get_access_tokens(auth):
         4. Catch the new access token.
     """
 
-    with open(ACCESS_TOKEN_FILE, 'r+') as file:
+    script_dir = os.path.dirname(__file__)  # absolute dir the script is in
+
+    with open(os.path.join(script_dir, ACCESS_TOKEN_FILE), 'r+') as file:
         content = file.readline()
 
         # if the file has been written before

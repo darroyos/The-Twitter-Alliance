@@ -7,17 +7,16 @@ import os
 # See: https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 
 
-class TwitterAlliancePipeline(object):
+class TwCounterSpiderPipeline(object):
     def process_item(self, item, spider):
         """
         Writes all the accounts list to a file.
         """
 
-        EXPORT_FOLER = 'twitteralgo'
+        script_dir = os.path.dirname(__file__)  # absolute dir the script is in
+        EXPORT_FILE = "../TwitterAlliance/top_users/%s" % item['filename']
 
-        fileDir = os.path.dirname(os.path.realpath('__file__'))
-
-        with open(os.path.join(EXPORT_FOLER, item['filename']), "w") as export:
+        with open(os.path.join(script_dir, EXPORT_FILE), "w") as export:
             for user in item['user_accounts']:
                 export.write(user + '\n')
 

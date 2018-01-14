@@ -25,7 +25,7 @@ WHAT IT DOES:
 """
 import scrapy
 
-from items import TwitterAllianceItem
+from items import TwCounterSpiderItem
 
 
 class TwchartSpider(scrapy.Spider):
@@ -45,7 +45,7 @@ class TwchartSpider(scrapy.Spider):
         tw_accounts = my_selector.extract()
 
         # Create an item
-        users = TwitterAllianceItem()
+        users = TwCounterSpiderItem()
         users['user_accounts'] = tw_accounts  # pass the accounts list
         users['filename'] = self.filename
 
