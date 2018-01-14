@@ -174,7 +174,7 @@ def fetch_relationships(top100, api):
     user_accounts = list(top100)
     curr_user_index = 0
     next_user_index = 0
-    limit = 3
+    limit = len(user_accounts)
 
     while (curr_user_index < limit):
         source_user = user_accounts[curr_user_index]
@@ -191,7 +191,7 @@ def fetch_relationships(top100, api):
                     the least number of API request (rate limit...)
                     """
                     top100.get(source_user).append(target_user)
-                    logging.info("Friendship with %s detected! Source user %s" % (target_user, source_user))
+                    logging.info("Friendship %s - %s detected!" % (source_user, target_user))
                 else:
                     friends = api.show_friendship(source_screen_name=source_user,
                                                   target_screen_name=target_user)
@@ -200,7 +200,7 @@ def fetch_relationships(top100, api):
                     if friends[0].following and friends[1].following:
                         # they're folling each other
                         top100.get(source_user).append(target_user)
-                        logging.info("Friendship with %s detected! Source user %s" % (target_user, source_user))
+                        logging.info("Friendship %s - %s detected!" % (source_user, target_user))
 
             total_completed = ((curr_user_index * limit +
                                next_user_index) / (limit *
