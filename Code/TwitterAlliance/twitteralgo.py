@@ -3,6 +3,8 @@ import sys
 import os
 import getopt
 import logging
+import requests
+import json
 import tweepy
 
 from enum import Enum
@@ -58,8 +60,9 @@ class AlgoMode(Enum):
 #################################################
 # Global Configuration
 #################################################
-CONSUMER_TOKEN = 'fCAAKDacsyiASiJHNnRMtUmho'
-CONSUMER_SECRET = 'HlH1LY8rZq1CKPHw98S7DQWrlQU32wLBW9Lf5Uoiu9foGSCgjB'
+CONSUMER_TOKEN = '5p3UPD2z1ryjZBm2Vt5XHInSe'
+CONSUMER_SECRET = 'qtTgzazNkmJZTg0gjeT049SKdNSM6pE7LGcLoC4RXNIcv2Jrf8'
+GOOGLE_API_KEY = 'AIzaSyDPkvGLJkvVmKxwjt1vf_BsqFhe1T6HRd4'
 
 INPUT_FOLER = 'top_users'
 EXPORT_FOLER = 'results'
@@ -154,11 +157,63 @@ def read_accounts_file(filename):
     with open(os.path.join(script_dir, INPUT_FILE), 'r') as file:
         for user in file:
             user = user.strip()
-            top100.update({user: []})
+            top100[user] = {}
 
     logging.info("Twitter accounts file '%s' readed. Number of accounts: %i" % (INPUT_FILE, len(top100)))
 
     return top100
+
+
+def fetch_user_info(user, top100, api):
+    """
+    Extract the user's profile info and appends it to the dictionary.
+    """
+    user_item = api.get_user(screen_name=user)
+
+    dict_user = top100.get(user)
+
+    """
+    Dictionary keys
+    ----------------------------------
+    dict_user['followings']
+    dict_user['followers']
+    dict_user['tweets']
+    dict_user['location']
+    dict_user['latitude']
+    dict_user['longitude']
+    dict_user['favourites']
+    dict_user['follows_list'] = []
+    """
+
+    dict_user['followings'] = str(user_item.friends_count)
+    logging.info('Followings ' + user + ': ' + dict_user['followings'])
+    dict_user['followers'] = str(user_item.followers_count)
+    logging.info('Followers ' + user + ': ' + dict_user['followers'])
+    dict_user['tweets'] = str(user_item.statuses_count)
+    logging.info('Tweets ' + user + ': ' + dict_user['tweets'])
+
+    # LOCATION COORDINATES (Google Maps Geolocation API)
+    # ------------------------------------------------------------
+
+    dict_user['location'] = user_item.location
+    logging.info('Location ' + user + ': ' + dict_user['location'])
+
+    google_maps_url = 'https://maps.googleapis.com/maps/api/geocode/json?address=' + dict_user['location'] + '&key=' + GOOGLE_API_KEY
+    r = requests.get(google_maps_url)
+
+    jsonresponse = r.json()
+
+    if jsonresponse['results']:
+        dict_user['latitude'] = str(jsonresponse['results'][0]['geometry']['location']['lat'])
+        logging.info('Latituted ' + user + ': ' + dict_user['latitude'])
+        dict_user['longitude'] = str(jsonresponse['results'][0]['geometry']['location']['lng'])
+        logging.info('Longitude ' + user + ': ' + dict_user['longitude'])
+
+    # ------------------------------------------------------------
+
+    dict_user['favourites'] = str(user_item.favourites_count)
+    logging.info('Favourites ' + user + ': ' + dict_user['favourites'])
+    dict_user['follows_list'] = []
 
 
 def fetch_relationships(top100, api):
@@ -179,18 +234,20 @@ def fetch_relationships(top100, api):
     while (curr_user_index < limit):
         source_user = user_accounts[curr_user_index]
         logging.info("CURRENT SOURCE USER: %s" % source_user)
+        fetch_user_info(source_user, top100, api)
         while (next_user_index < limit):
             if (curr_user_index != next_user_index):
                 target_user = user_accounts[next_user_index]
 
-                target_friends = top100.get(target_user)
-                if source_user in target_friends:
+                target_friends = top100.get(target_user).get('follows_list')
+                if target_friends and source_user in target_friends:
                     """
                     Check in the dictionary wether the target user has the
                     source user inside its friendship list. Our goal is to make
                     the least number of API request (rate limit...)
                     """
-                    top100.get(source_user).append(target_user)
+                    top100.get(source_user).get('follows_list').append(target_user)
+
                     logging.info("Friendship %s - %s detected!" % (source_user, target_user))
                 else:
                     friends = api.show_friendship(source_screen_name=source_user,
@@ -199,7 +256,7 @@ def fetch_relationships(top100, api):
                     # friends[0] => source_user | friends[1] => target_user
                     if friends[0].following and friends[1].following:
                         # they're folling each other
-                        top100.get(source_user).append(target_user)
+                        top100.get(source_user).get('follows_list').append(target_user)
                         logging.info("Friendship %s - %s detected!" % (source_user, target_user))
 
             total_completed = ((curr_user_index * limit +
@@ -225,21 +282,22 @@ def fetch_all_relationships(top100, api):
     while (curr_user_index < limit):
         source_user = user_accounts[curr_user_index]
         logging.info("CURRENT SOURCE USER: %s" % source_user)
+        fetch_user_info(source_user, top100, api)
         while (next_user_index < limit):
             if (curr_user_index != next_user_index):
                 target_user = user_accounts[next_user_index]
 
-                target_friends = top100.get(target_user)
+                target_friends = top100.get(target_user).get('follows_list')
 
-                if source_user not in target_friends:
+                if target_friends and source_user not in target_friends:
                     friends = api.show_friendship(source_screen_name=source_user,
                                                   target_screen_name=target_user)
 
                     if friends[0].following:
-                        top100.get(source_user).append(target_user)
+                        top100.get(source_user).get('follows_list').append(target_user)
                         logging.info('Source account: %s follows %s' % (source_user, target_user))
                     if friends[1].following:
-                        top100.get(target_user).append(source_user)
+                        top100.get(target_user).get('follows_list').append(source_user)
                         logging.info('Target account: %s follows %s' % (target_user, source_user))
 
             total_completed = ((curr_user_index * limit +
@@ -266,17 +324,49 @@ def save_to_file(top100):
     script_dir = os.path.dirname(__file__)  # absolute dir the script is in
     EXPORT_FILE = EXPORT_FOLER + '/' + FRIENDSHIP_FILE
 
-    with open(os.path.join(script_dir, EXPORT_FILE), 'w') as file:
+    with open(os.path.join(script_dir, EXPORT_FILE), 'w+') as file:
         for user in user_accounts:
-            friends = top100.get(user)
+            friends = top100.get(user).get('follows_list')
             file.write(user + ': ')
 
-            for friend in friends:
-                file.write(friend + ' ')
+            if friends:
+                for friend in friends:
+                    file.write(friend + ' ')
 
             file.write('\n')
 
-    logging.info("Process completed. Exported results: %s" % FRIENDSHIP_FILE)
+    USERS_FILE = FRIENDSHIP_FILE[:-4] + '_users.txt'
+    EXPORT_FILE = EXPORT_FOLER + '/' + USERS_FILE
+
+    with open(os.path.join(script_dir, EXPORT_FILE), 'w+') as file:
+        for user in user_accounts:
+            user_data = top100.get(user)
+
+            followings = user_data.get('followings', '0')
+            followers = user_data.get('followers', '0')
+            tweets = user_data.get('tweets', '0')
+            location = user_data.get('location', '0')
+            latitude = user_data.get('latitude', '0')
+            longitude = user_data.get('longitude', '0')
+            favourites = user_data.get('favourites', '0')
+
+            file.write(user + ': ')
+            file.write(followings)
+            file.write(' ')
+            file.write(followers)
+            file.write(' ')
+            file.write(tweets)
+            file.write(' ')
+            # file.write(location)
+            # file.write(' ')
+            file.write(latitude)
+            file.write(' ')
+            file.write(longitude)
+            file.write(' ')
+            file.write(favourites)
+            file.write('\n')
+
+    logging.info("Process completed. Exported results: %s & %s" % (FRIENDSHIP_FILE, USERS_FILE))
 
 
 def authentication():

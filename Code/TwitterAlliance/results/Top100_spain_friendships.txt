@@ -1,100 +1,100 @@
-@Cosmopolitan_es: @CristiPedroche @_danielmartin_ 
-@Thiago6: @Rafinha @D_DeGea @JordiAlba @MarcBartra @21LVA @AlvaroMorata @SergiRoberto10 @3gerardpique @AnderHerrera @Carles5puyol @IkerCasillas @SeFutbol @_Pedro17_ @Guaje7Villa @nachofi1990 @SergioRamos @ristomejide @mundodeportivo @andresiniesta8 @marca @ctello91 @XabiAlonso 
-@enriqueiglesias: 
-@fifaworldcup_es: @aarbeloa17 @DaniCarvajal92 @IkerCasillas @SeFutbol 
-@BoseOfficial: @davidbisbal @ElJuanpaZurita @_MaluOficial_ @pabloalboran @AlejandroSanz @_danielmartin_ 
-@Rafinha: @Thiago6 @JordiAlba @danimartinezweb @MarcBartra @FCBarcelona_es @AlvaroMorata @SergiRoberto10 @3gerardpique @Carles5puyol @_Pedro17_ @Guaje7Villa @ristomejide @mundodeportivo @ctello91 @JeseRodriguez10 @_danielmartin_ 
-@D_DeGea: @Thiago6 @SSantiagosegura @JordiAlba @MelendiOficial @danimartinezweb @Torres @rickyrubio9 @MarcBartra @AlvaroMorata @3gerardpique @AnderHerrera @IkerCasillas @SeFutbol @_Pedro17_ @Guaje7Villa @isco_alarcon @juanmata8 @nachofi1990 @CesarAzpi @SergioRamos @ristomejide @andresiniesta8 @ctello91 @19SCazorla @XabiAlonso 
-@SSantiagosegura: @D_DeGea @danimartinezweb @Buenafuente @mario_casas_ @davidbisbal @Wismichu @aarbeloa17 @lorenzo99 @AnnaSimonMari @CristiPedroche @perezreverte @3gerardpique @auronplay @IkerCasillas @jordievole @Guaje7Villa @flofdezz @cesc4official @SergioRamos @pabloalboran @mangelrogel @Pablo_Iglesias_ @ristomejide @El_Hormiguero @Rubiu5 @andresiniesta8 @GUTY14HAZ @_danielmartin_ 
-@JordiAlba: @Thiago6 @Rafinha @D_DeGea @danimartinezweb @llorentefer19 @Buenafuente @Torres @MarcBartra @FCBarcelona_cat @21LVA @lorenzo99 @FCBarcelona_es @AlvaroMorata @AnnaSimonMari @SergiRoberto10 @3gerardpique @LaLiga @AnderHerrera @Carles5puyol @IkerCasillas @SeFutbol @_Pedro17_ @Guaje7Villa @FCBarcelona @cesc4official @juanmata8 @CesarAzpi @_MaluOficial_ @SergioRamos @pabloalboran @ristomejide @marcmarquez93 @andresiniesta8 @fifacom_es @ctello91 @19SCazorla @paugasol 
-@hola: @MarcBartra @lorenzo99 @CristiPedroche @IkerCasillas @pabloalboran @ristomejide @El_Hormiguero 
-@realmadrid: @LaLiga @DaniCarvajal92 @isco_alarcon @nachofi1990 @SergioRamos @realmadriden 
-@MelendiOficial: @D_DeGea @davidbisbal @Carles5puyol @Guaje7Villa @_MaluOficial_ @pabloalboran @ristomejide @El_Hormiguero @AlejandroSanz @19SCazorla 
-@danimartinezweb: @Rafinha @D_DeGea @SSantiagosegura @JordiAlba @llorentefer19 @rickyrubio9 @MarcBartra @aarbeloa17 @AlvaroMorata @AnnaSimonMari @SergiRoberto10 @AnderHerrera @IkerCasillas @jordievole @Guaje7Villa @flofdezz @isco_alarcon @juanmata8 @_MaluOficial_ @pabloalboran @mangelrogel @ristomejide @marcmarquez93 @Rubiu5 @AlejandroSanz 
-@llorentefer19: @JordiAlba @danimartinezweb @MarcBartra @21LVA @aarbeloa17 @AlvaroMorata @SergiRoberto10 @3gerardpique @A3Noticias @AnderHerrera @Carles5puyol @IkerCasillas @diarioas @SeFutbol @_Pedro17_ @Guaje7Villa @isco_alarcon @cesc4official @juanmata8 @nachofi1990 @CesarAzpi @SergioRamos @2010MisterChip @andresiniesta8 @RafaelNadal @marca @ctello91 @19SCazorla @GUTY14HAZ @XabiAlonso @paugasol 
-@Buenafuente: @SSantiagosegura @JordiAlba @lorenzo99 @Berto_Romero @flofdezz @Pablo_Iglesias_ @andresiniesta8 @ifilosofia @paugasol 
-@Torres: @D_DeGea @JordiAlba @MarcBartra @21LVA @aarbeloa17 @lorenzo99 @AlvaroMorata @3gerardpique @LaLiga @Carles5puyol @IkerCasillas @diarioas @Atleti @SeFutbol @_Pedro17_ @Guaje7Villa @cesc4official @juanmata8 @CesarAzpi @SergioRamos @2010MisterChip @ristomejide @mundodeportivo @marcmarquez93 @marca @fifacom_es @19SCazorla @XabiAlonso @_danielmartin_ 
-@rickyrubio9: @D_DeGea @danimartinezweb @MarcBartra @3gerardpique @2010MisterChip @ristomejide @mundodeportivo @marcmarquez93 @RafaelNadal @marca @_danielmartin_ @paugasol 
-@mario_casas_: @SSantiagosegura @CristiPedroche @IkerCasillas @jordievole @pabloalboran @DANIROVIRA @ristomejide @El_Hormiguero 
-@MarcBartra: @Thiago6 @Rafinha @D_DeGea @JordiAlba @hola @danimartinezweb @llorentefer19 @Torres @rickyrubio9 @aarbeloa17 @lorenzo99 @AlvaroMorata @SergiRoberto10 @3gerardpique @Carles5puyol @IkerCasillas @diarioas @SeFutbol @_Pedro17_ @Guaje7Villa @isco_alarcon @cesc4official @juanmata8 @nachofi1990 @CesarAzpi @SergioRamos @pabloalboran @2010MisterChip @ristomejide @mundodeportivo @marcmarquez93 @andresiniesta8 @marca @fifacom_es @ctello91 @19SCazorla 
-@FCBarcelona_cat: @JordiAlba @FCBarcelona_es @SergiRoberto10 @3gerardpique @Carles5puyol @FCBarcelona @andresiniesta8 
-@davidbisbal: @BoseOfficial @SSantiagosegura @MelendiOficial @aarbeloa17 @lorenzo99 @Carles5puyol @IkerCasillas @SeFutbol @Guaje7Villa @_MaluOficial_ @SergioRamos @pabloalboran @ristomejide @El_Hormiguero @marcmarquez93 @AlejandroSanz @RafaelNadal @marca @alo_oficial @_danielmartin_ @paugasol 
-@Wismichu: @SSantiagosegura @auronplay @TownGamePlay @mangelrogel @Rubiu5 
-@21LVA: @Thiago6 @JordiAlba @llorentefer19 @Torres @aarbeloa17 @AlvaroMorata @3gerardpique @Carles5puyol @IkerCasillas @SeFutbol @_Pedro17_ @Guaje7Villa @isco_alarcon @cesc4official @juanmata8 @SergioRamos @2010MisterChip @marcmarquez93 @AlejandroSanz @19SCazorla @XabiAlonso @paugasol 
-@aarbeloa17: @fifaworldcup_es @SSantiagosegura @danimartinezweb @llorentefer19 @Torres @MarcBartra @davidbisbal @21LVA @AlvaroMorata @DaniCarvajal92 @SeFutbol @Guaje7Villa @isco_alarcon @juanmata8 @nachofi1990 @SergioRamos @2010MisterChip @andresiniesta8 @fifacom_es @19SCazorla @GUTY14HAZ @XabiAlonso @JeseRodriguez10 @_danielmartin_ 
-@policia: 
-@lorenzo99: @SSantiagosegura @JordiAlba @hola @Buenafuente @Torres @MarcBartra @davidbisbal @AlvaroMorata @CristiPedroche @Carles5puyol @IkerCasillas @diarioas @jordievole @Guaje7Villa @SergioRamos @muyinteresante @ristomejide @El_Hormiguero @mundodeportivo @marcmarquez93 @andresiniesta8 @AlejandroSanz @ifilosofia @RafaelNadal @marca @alo_oficial @paugasol 
-@FCBarcelona_es: @Rafinha @JordiAlba @FCBarcelona_cat @SergiRoberto10 @3gerardpique @LaLiga @FCBarcelona @andresiniesta8 
-@AlvaroMorata: @Thiago6 @Rafinha @D_DeGea @JordiAlba @danimartinezweb @llorentefer19 @Torres @MarcBartra @21LVA @aarbeloa17 @lorenzo99 @SergiRoberto10 @3gerardpique @AnderHerrera @DaniCarvajal92 @IkerCasillas @SeFutbol @_Pedro17_ @Guaje7Villa @isco_alarcon @cesc4official @juanmata8 @nachofi1990 @CesarAzpi @SergioRamos @2010MisterChip @fifacom_es @ctello91 @19SCazorla @GUTY14HAZ @XabiAlonso @JeseRodriguez10 @_danielmartin_ 
-@AnnaSimonMari: @SSantiagosegura @JordiAlba @danimartinezweb @CristiPedroche @3gerardpique @flofdezz @El_Hormiguero @_danielmartin_ 
-@CristiPedroche: @Cosmopolitan_es @SSantiagosegura @hola @mario_casas_ @lorenzo99 @AnnaSimonMari @jordievole @flofdezz @pabloalboran @ristomejide @marcmarquez93 @Rubiu5 @AlejandroSanz @marca @_danielmartin_ 
-@Pontifex_es: 
-@mtvspain: @pabloalboran @_danielmartin_ 
-@perezreverte: @SSantiagosegura @jordievole @Pablo_Iglesias_ @elmundoes 
-@SergiRoberto10: @Thiago6 @Rafinha @JordiAlba @danimartinezweb @llorentefer19 @MarcBartra @FCBarcelona_cat @FCBarcelona_es @AlvaroMorata @3gerardpique @LaLiga @AnderHerrera @Carles5puyol @IkerCasillas @SeFutbol @_Pedro17_ @Guaje7Villa @FCBarcelona @isco_alarcon @cesc4official @juanmata8 @nachofi1990 @CesarAzpi @ristomejide @mundodeportivo @marcmarquez93 @ctello91 @19SCazorla @paugasol 
-@3gerardpique: @Thiago6 @Rafinha @D_DeGea @SSantiagosegura @JordiAlba @llorentefer19 @Torres @rickyrubio9 @MarcBartra @FCBarcelona_cat @21LVA @FCBarcelona_es @AlvaroMorata @AnnaSimonMari @SergiRoberto10 @LaLiga @AnderHerrera @Carles5puyol @IkerCasillas @jordievole @SeFutbol @_Pedro17_ @Guaje7Villa @FCBarcelona @cesc4official @juanmata8 @CesarAzpi @SergioRamos @pabloalboran @2010MisterChip @ristomejide @marcmarquez93 @andresiniesta8 @AlejandroSanz @ifilosofia @ctello91 @19SCazorla @paugasol 
-@Berto_Romero: @Buenafuente @flofdezz @Pablo_Iglesias_ 
-@auronplay: @SSantiagosegura @Wismichu @TownGamePlay @pabloalboran @mangelrogel @2010MisterChip @Pablo_Iglesias_ @ristomejide @Rubiu5 @vegetta777 
-@A3Noticias: @llorentefer19 @IkerCasillas @isco_alarcon @el_pais @pabloalboran @elmundoes 
-@LaLiga: @JordiAlba @realmadrid @Torres @FCBarcelona_es @SergiRoberto10 @3gerardpique @DaniCarvajal92 @Carles5puyol @Atleti @SeFutbol @Guaje7Villa @FCBarcelona @nachofi1990 @SergioRamos @marca @ctello91 
-@AnderHerrera: @Thiago6 @D_DeGea @JordiAlba @danimartinezweb @llorentefer19 @AlvaroMorata @SergiRoberto10 @3gerardpique @IkerCasillas @SeFutbol @Guaje7Villa @juanmata8 @CesarAzpi @SergioRamos @2010MisterChip @ctello91 @19SCazorla 
-@DaniCarvajal92: @fifaworldcup_es @realmadrid @aarbeloa17 @AlvaroMorata @LaLiga @IkerCasillas @SeFutbol @isco_alarcon @nachofi1990 @SergioRamos @2010MisterChip @GUTY14HAZ @XabiAlonso @JeseRodriguez10 
-@WillyrexYT: @LuzuVlogs @TownGamePlay @mangelrogel @Rubiu5 @vegetta777 @LuzuGames @aLexBY11 
-@Carles5puyol: @Thiago6 @Rafinha @JordiAlba @MelendiOficial @llorentefer19 @Torres @MarcBartra @FCBarcelona_cat @davidbisbal @21LVA @lorenzo99 @SergiRoberto10 @3gerardpique @LaLiga @IkerCasillas @jordievole @SeFutbol @_Pedro17_ @Guaje7Villa @cesc4official @juanmata8 @SergioRamos @ristomejide @marcmarquez93 @andresiniesta8 @AlejandroSanz @ctello91 @19SCazorla @_danielmartin_ @paugasol 
-@IkerCasillas: @Thiago6 @fifaworldcup_es @D_DeGea @SSantiagosegura @JordiAlba @hola @danimartinezweb @llorentefer19 @Torres @mario_casas_ @MarcBartra @davidbisbal @21LVA @lorenzo99 @AlvaroMorata @SergiRoberto10 @3gerardpique @A3Noticias @AnderHerrera @DaniCarvajal92 @Carles5puyol @jordievole @LuzuVlogs @SeFutbol @Guaje7Villa @flofdezz @isco_alarcon @cesc4official @juanmata8 @nachofi1990 @CesarAzpi @SergioRamos @_anapastor_ @pabloalboran @DANIROVIRA @2010MisterChip @ristomejide @BBVAworld @marcmarquez93 @AlejandroSanz @fifacom_es @ctello91 @19SCazorla @GUTY14HAZ @elmundoes @JeseRodriguez10 @_danielmartin_ @paugasol @aLexBY11 
-@diarioas: @llorentefer19 @Torres @MarcBartra @lorenzo99 @isco_alarcon @nachofi1990 @el_pais @2010MisterChip @Pablo_Iglesias_ @BBVAworld @mundodeportivo @AlejandroSanz @ctello91 @19SCazorla 
-@Atleti: @Torres @LaLiga @Guaje7Villa 
-@jordievole: @SSantiagosegura @danimartinezweb @mario_casas_ @lorenzo99 @CristiPedroche @perezreverte @3gerardpique @Carles5puyol @IkerCasillas @flofdezz @el_pais @_anapastor_ @DANIROVIRA @Pablo_Iglesias_ @ristomejide @andresiniesta8 @AlejandroSanz @_danielmartin_ @paugasol 
-@LuzuVlogs: @WillyrexYT @IkerCasillas @mangelrogel @ristomejide @Rubiu5 @vegetta777 @LuzuGames @aLexBY11 
-@SeFutbol: @Thiago6 @fifaworldcup_es @D_DeGea @JordiAlba @llorentefer19 @Torres @MarcBartra @davidbisbal @21LVA @aarbeloa17 @AlvaroMorata @SergiRoberto10 @3gerardpique @LaLiga @AnderHerrera @DaniCarvajal92 @Carles5puyol @IkerCasillas @_Pedro17_ @Guaje7Villa @isco_alarcon @cesc4official @juanmata8 @nachofi1990 @CesarAzpi @SergioRamos @andresiniesta8 @AlejandroSanz @fifacom_es @ctello91 @19SCazorla @XabiAlonso @JeseRodriguez10 
-@_Pedro17_: @Thiago6 @Rafinha @D_DeGea @JordiAlba @llorentefer19 @Torres @MarcBartra @21LVA @AlvaroMorata @SergiRoberto10 @3gerardpique @Carles5puyol @SeFutbol @Guaje7Villa @cesc4official @juanmata8 @CesarAzpi @_MaluOficial_ @mundodeportivo @andresiniesta8 @ctello91 @19SCazorla @paugasol 
-@Guaje7Villa: @Thiago6 @Rafinha @D_DeGea @SSantiagosegura @JordiAlba @MelendiOficial @danimartinezweb @llorentefer19 @Torres @MarcBartra @davidbisbal @21LVA @aarbeloa17 @lorenzo99 @AlvaroMorata @SergiRoberto10 @3gerardpique @LaLiga @AnderHerrera @Carles5puyol @IkerCasillas @Atleti @SeFutbol @_Pedro17_ @cesc4official @juanmata8 @nachofi1990 @CesarAzpi @SergioRamos @pabloalboran @2010MisterChip @ristomejide @marcmarquez93 @andresiniesta8 @ctello91 @19SCazorla @XabiAlonso @_danielmartin_ @paugasol 
-@FCBarcelona: @JordiAlba @FCBarcelona_cat @FCBarcelona_es @SergiRoberto10 @3gerardpique @LaLiga 
-@flofdezz: @SSantiagosegura @danimartinezweb @Buenafuente @AnnaSimonMari @CristiPedroche @Berto_Romero @IkerCasillas @jordievole @_MaluOficial_ @DANIROVIRA @ristomejide @El_Hormiguero @_danielmartin_ @paugasol 
-@ElJuanpaZurita: @BoseOfficial @AlejandroSanz @LuzuGames 
-@AbrahamMateo: @AlejandroSanz 
-@isco_alarcon: @D_DeGea @realmadrid @danimartinezweb @llorentefer19 @MarcBartra @21LVA @aarbeloa17 @AlvaroMorata @SergiRoberto10 @A3Noticias @DaniCarvajal92 @IkerCasillas @diarioas @SeFutbol @juanmata8 @nachofi1990 @SergioRamos @realmadriden @DANIROVIRA @2010MisterChip @ifilosofia @marca @ctello91 @19SCazorla @GUTY14HAZ @XabiAlonso @JeseRodriguez10 @_danielmartin_ @paugasol 
-@cesc4official: @SSantiagosegura @JordiAlba @llorentefer19 @Torres @MarcBartra @21LVA @AlvaroMorata @SergiRoberto10 @3gerardpique @Carles5puyol @IkerCasillas @SeFutbol @_Pedro17_ @Guaje7Villa @juanmata8 @marcmarquez93 @ifilosofia @ctello91 @_danielmartin_ @paugasol 
-@juanmata8: @D_DeGea @JordiAlba @danimartinezweb @llorentefer19 @Torres @MarcBartra @21LVA @aarbeloa17 @AlvaroMorata @SergiRoberto10 @3gerardpique @AnderHerrera @Carles5puyol @IkerCasillas @SeFutbol @_Pedro17_ @Guaje7Villa @isco_alarcon @cesc4official @nachofi1990 @CesarAzpi @SergioRamos @ristomejide @RafaelNadal @fifacom_es @19SCazorla @XabiAlonso @paugasol 
-@nachofi1990: @Thiago6 @D_DeGea @realmadrid @llorentefer19 @MarcBartra @aarbeloa17 @AlvaroMorata @SergiRoberto10 @LaLiga @DaniCarvajal92 @IkerCasillas @diarioas @SeFutbol @Guaje7Villa @isco_alarcon @juanmata8 @CesarAzpi @SergioRamos @realmadriden @pabloalboran @2010MisterChip @marca @fifacom_es @ctello91 @19SCazorla @XabiAlonso @JeseRodriguez10 @_danielmartin_ 
-@CesarAzpi: @D_DeGea @JordiAlba @llorentefer19 @Torres @MarcBartra @AlvaroMorata @SergiRoberto10 @3gerardpique @AnderHerrera @IkerCasillas @SeFutbol @_Pedro17_ @Guaje7Villa @juanmata8 @nachofi1990 @SergioRamos @19SCazorla 
-@_MaluOficial_: @BoseOfficial @JordiAlba @MelendiOficial @danimartinezweb @davidbisbal @_Pedro17_ @flofdezz @SergioRamos @pabloalboran @ristomejide @AlejandroSanz @ifilosofia @elmundoes @_danielmartin_ 
-@SergioRamos: @Thiago6 @D_DeGea @SSantiagosegura @JordiAlba @realmadrid @llorentefer19 @Torres @MarcBartra @davidbisbal @21LVA @aarbeloa17 @lorenzo99 @AlvaroMorata @3gerardpique @LaLiga @AnderHerrera @DaniCarvajal92 @Carles5puyol @IkerCasillas @SeFutbol @Guaje7Villa @isco_alarcon @juanmata8 @nachofi1990 @CesarAzpi @_MaluOficial_ @realmadriden @pabloalboran @2010MisterChip @andresiniesta8 @AlejandroSanz @ifilosofia @RafaelNadal @officialpepe @ctello91 @19SCazorla @GUTY14HAZ @XabiAlonso @JeseRodriguez10 @_danielmartin_ @paugasol 
-@el_pais: @A3Noticias @diarioas @jordievole @muyinteresante @elmundoes 
-@ActualidadRT: 
-@_anapastor_: @IkerCasillas @jordievole @pabloalboran @Pablo_Iglesias_ @ristomejide @AlejandroSanz @XabiAlonso @elmundoes @paugasol 
-@muyinteresante: @lorenzo99 @el_pais @pabloalboran @paugasol 
-@realmadriden: @realmadrid @isco_alarcon @nachofi1990 @SergioRamos 
-@TownGamePlay: @Wismichu @auronplay @WillyrexYT @mangelrogel @Rubiu5 @vegetta777 @LuzuGames 
-@pabloalboran: @BoseOfficial @SSantiagosegura @JordiAlba @hola @MelendiOficial @danimartinezweb @mario_casas_ @MarcBartra @davidbisbal @CristiPedroche @mtvspain @3gerardpique @auronplay @A3Noticias @IkerCasillas @Guaje7Villa @nachofi1990 @_MaluOficial_ @SergioRamos @_anapastor_ @muyinteresante @DANIROVIRA @ristomejide @El_Hormiguero @AlejandroSanz @ifilosofia @elmundoes @paugasol 
-@DANIROVIRA: @mario_casas_ @IkerCasillas @jordievole @flofdezz @isco_alarcon @pabloalboran @Pablo_Iglesias_ @marcmarquez93 @andresiniesta8 
-@mangelrogel: @SSantiagosegura @danimartinezweb @Wismichu @auronplay @WillyrexYT @LuzuVlogs @TownGamePlay @ristomejide @Rubiu5 @vegetta777 @LuzuGames @aLexBY11 
-@2010MisterChip: @llorentefer19 @Torres @rickyrubio9 @MarcBartra @21LVA @aarbeloa17 @AlvaroMorata @3gerardpique @auronplay @AnderHerrera @DaniCarvajal92 @IkerCasillas @diarioas @Guaje7Villa @isco_alarcon @nachofi1990 @SergioRamos @ristomejide @BBVAworld @mundodeportivo @AlejandroSanz @marca @ctello91 @XabiAlonso @paugasol 
-@Pablo_Iglesias_: @SSantiagosegura @Buenafuente @perezreverte @Berto_Romero @auronplay @diarioas @jordievole @_anapastor_ @DANIROVIRA @ristomejide @Rubiu5 @elmundoes 
-@ristomejide: @Thiago6 @Rafinha @D_DeGea @SSantiagosegura @JordiAlba @hola @MelendiOficial @danimartinezweb @Torres @rickyrubio9 @mario_casas_ @MarcBartra @davidbisbal @lorenzo99 @CristiPedroche @SergiRoberto10 @3gerardpique @auronplay @Carles5puyol @IkerCasillas @jordievole @LuzuVlogs @Guaje7Villa @flofdezz @juanmata8 @_MaluOficial_ @_anapastor_ @pabloalboran @mangelrogel @2010MisterChip @Pablo_Iglesias_ @mundodeportivo @Rubiu5 @andresiniesta8 @AlejandroSanz @GUTY14HAZ @elmundoes @_danielmartin_ @paugasol 
-@BBVAworld: @IkerCasillas @diarioas @2010MisterChip @mundodeportivo @marca 
-@El_Hormiguero: @SSantiagosegura @hola @MelendiOficial @mario_casas_ @davidbisbal @lorenzo99 @AnnaSimonMari @flofdezz @pabloalboran @marcmarquez93 @_danielmartin_ 
-@mundodeportivo: @Thiago6 @Rafinha @Torres @rickyrubio9 @MarcBartra @lorenzo99 @SergiRoberto10 @diarioas @_Pedro17_ @2010MisterChip @ristomejide @BBVAworld @AlejandroSanz @marca 
-@marcmarquez93: @JordiAlba @danimartinezweb @Torres @rickyrubio9 @MarcBartra @davidbisbal @21LVA @lorenzo99 @CristiPedroche @SergiRoberto10 @3gerardpique @Carles5puyol @IkerCasillas @Guaje7Villa @cesc4official @DANIROVIRA @El_Hormiguero @Rubiu5 @andresiniesta8 @RafaelNadal @alo_oficial @_danielmartin_ @paugasol 
-@Rubiu5: @SSantiagosegura @danimartinezweb @Wismichu @CristiPedroche @auronplay @WillyrexYT @LuzuVlogs @TownGamePlay @mangelrogel @Pablo_Iglesias_ @ristomejide @marcmarquez93 @vegetta777 @LuzuGames @aLexBY11 
-@andresiniesta8: @Thiago6 @D_DeGea @SSantiagosegura @JordiAlba @llorentefer19 @Buenafuente @MarcBartra @FCBarcelona_cat @aarbeloa17 @lorenzo99 @FCBarcelona_es @3gerardpique @Carles5puyol @jordievole @SeFutbol @_Pedro17_ @Guaje7Villa @SergioRamos @DANIROVIRA @ristomejide @marcmarquez93 @ctello91 @paugasol 
-@AlejandroSanz: @BoseOfficial @MelendiOficial @danimartinezweb @davidbisbal @21LVA @lorenzo99 @CristiPedroche @3gerardpique @Carles5puyol @IkerCasillas @diarioas @jordievole @SeFutbol @ElJuanpaZurita @AbrahamMateo @_MaluOficial_ @SergioRamos @_anapastor_ @pabloalboran @2010MisterChip @ristomejide @mundodeportivo @GUTY14HAZ @_danielmartin_ @paugasol 
-@ifilosofia: @Buenafuente @lorenzo99 @3gerardpique @isco_alarcon @cesc4official @_MaluOficial_ @SergioRamos @pabloalboran @ctello91 @XabiAlonso @elmundoes @_danielmartin_ 
-@RafaelNadal: @llorentefer19 @rickyrubio9 @davidbisbal @lorenzo99 @juanmata8 @SergioRamos @marcmarquez93 @paugasol 
-@marca: @Thiago6 @llorentefer19 @Torres @rickyrubio9 @MarcBartra @davidbisbal @lorenzo99 @CristiPedroche @LaLiga @isco_alarcon @nachofi1990 @2010MisterChip @BBVAworld @mundodeportivo @ctello91 @19SCazorla @XabiAlonso @elmundoes 
-@fifacom_es: @JordiAlba @Torres @MarcBartra @aarbeloa17 @AlvaroMorata @IkerCasillas @SeFutbol @juanmata8 @nachofi1990 @19SCazorla 
-@officialpepe: @SergioRamos 
-@ctello91: @Thiago6 @Rafinha @D_DeGea @JordiAlba @llorentefer19 @MarcBartra @AlvaroMorata @SergiRoberto10 @3gerardpique @LaLiga @AnderHerrera @Carles5puyol @IkerCasillas @diarioas @SeFutbol @_Pedro17_ @Guaje7Villa @isco_alarcon @cesc4official @nachofi1990 @SergioRamos @2010MisterChip @andresiniesta8 @ifilosofia @marca @19SCazorla 
-@alo_oficial: @davidbisbal @lorenzo99 @marcmarquez93 @paugasol 
-@19SCazorla: @D_DeGea @JordiAlba @MelendiOficial @llorentefer19 @Torres @MarcBartra @21LVA @aarbeloa17 @AlvaroMorata @SergiRoberto10 @3gerardpique @AnderHerrera @Carles5puyol @IkerCasillas @diarioas @SeFutbol @_Pedro17_ @Guaje7Villa @isco_alarcon @juanmata8 @nachofi1990 @CesarAzpi @SergioRamos @marca @fifacom_es @ctello91 @GUTY14HAZ @XabiAlonso @_danielmartin_ 
-@VogueSpain: 
-@vegetta777: @auronplay @WillyrexYT @LuzuVlogs @TownGamePlay @mangelrogel @Rubiu5 @LuzuGames @aLexBY11 
-@GUTY14HAZ: @SSantiagosegura @llorentefer19 @aarbeloa17 @AlvaroMorata @DaniCarvajal92 @IkerCasillas @isco_alarcon @SergioRamos @ristomejide @AlejandroSanz @19SCazorla @XabiAlonso @JeseRodriguez10 
-@XabiAlonso: @Thiago6 @D_DeGea @llorentefer19 @Torres @21LVA @aarbeloa17 @AlvaroMorata @DaniCarvajal92 @SeFutbol @Guaje7Villa @isco_alarcon @juanmata8 @nachofi1990 @SergioRamos @_anapastor_ @2010MisterChip @ifilosofia @marca @19SCazorla @GUTY14HAZ @JeseRodriguez10 @paugasol 
-@LuzuGames: @WillyrexYT @LuzuVlogs @ElJuanpaZurita @TownGamePlay @mangelrogel @Rubiu5 @vegetta777 
-@elmundoes: @perezreverte @A3Noticias @IkerCasillas @_MaluOficial_ @el_pais @_anapastor_ @pabloalboran @Pablo_Iglesias_ @ristomejide @ifilosofia @marca 
-@JeseRodriguez10: @Rafinha @aarbeloa17 @AlvaroMorata @DaniCarvajal92 @IkerCasillas @SeFutbol @isco_alarcon @nachofi1990 @SergioRamos @GUTY14HAZ @XabiAlonso 
-@_danielmartin_: @Cosmopolitan_es @BoseOfficial @Rafinha @SSantiagosegura @Torres @rickyrubio9 @davidbisbal @aarbeloa17 @AlvaroMorata @AnnaSimonMari @CristiPedroche @mtvspain @Carles5puyol @IkerCasillas @jordievole @Guaje7Villa @flofdezz @isco_alarcon @cesc4official @nachofi1990 @_MaluOficial_ @SergioRamos @ristomejide @El_Hormiguero @marcmarquez93 @AlejandroSanz @ifilosofia @19SCazorla 
+@FCBarcelona_es: 
+@D_DeGea: 
+@DaniCarvajal92: 
+@Rafinha: 
+@paugasol: 
+@3gerardpique: 
+@FCBarcelona_cat: 
+@Cosmopolitan_es: 
+@WillyrexYT: 
+@MarcBartra: 
+@mundodeportivo: 
+@mario_casas_: 
+@Buenafuente: 
+@LuzuGames: 
+@Wismichu: 
+@realmadriden: 
+@LaLiga: 
+@jordievole: 
+@_MaluOficial_: 
+@danimartinezweb: 
+@vegetta777: 
+@CesarAzpi: 
+@alo_oficial: 
+@aLexBY11: 
+@AnnaSimonMari: 
+@mangelrogel: 
+@AnderHerrera: 
+@lorenzo99: 
+@El_Hormiguero: 
+@ristomejide: 
+@ctello91: 
+@auronplay: 
+@MelendiOficial: 
+@flofdezz: 
+@SergioRamos: 
 @taniarin: 
-@paugasol: @JordiAlba @llorentefer19 @Buenafuente @rickyrubio9 @davidbisbal @21LVA @lorenzo99 @SergiRoberto10 @3gerardpique @Carles5puyol @IkerCasillas @jordievole @_Pedro17_ @Guaje7Villa @flofdezz @isco_alarcon @cesc4official @juanmata8 @SergioRamos @_anapastor_ @muyinteresante @pabloalboran @2010MisterChip @ristomejide @marcmarquez93 @andresiniesta8 @AlejandroSanz @RafaelNadal @alo_oficial @XabiAlonso 
-@aLexBY11: @WillyrexYT @IkerCasillas @LuzuVlogs @mangelrogel @Rubiu5 @vegetta777 
+@nachofi1990: 
+@davidbisbal: 
+@Pontifex_es: 
+@RafaelNadal: 
+@DANIROVIRA: 
+@enriqueiglesias: 
+@A3Noticias: 
+@_Pedro17_: 
+@Berto_Romero: 
+@fifaworldcup_es: 
+@SeFutbol: 
+@XabiAlonso: 
+@Thiago6: 
+@JordiAlba: 
+@elmundoes: 
+@VogueSpain: 
+@BoseOfficial: 
+@Carles5puyol: 
+@officialpepe: 
+@perezreverte: 
+@Pablo_Iglesias_: 
+@Rubiu5: 
+@Torres: 
+@isco_alarcon: 
+@cesc4official: 
+@GUTY14HAZ: 
+@juanmata8: 
+@SSantiagosegura: 
+@hola: 
+@policia: 
+@19SCazorla: 
+@llorentefer19: 
+@AlejandroSanz: 
+@BBVAworld: 
+@marca: 
+@ElJuanpaZurita: 
+@Atleti: 
+@IkerCasillas: 
+@fifacom_es: 
+@pabloalboran: 
+@diarioas: 
+@rickyrubio9: 
+@SergiRoberto10: 
+@aarbeloa17: 
+@ifilosofia: 
+@mtvspain: 
+@CristiPedroche: 
+@Guaje7Villa: 
+@realmadrid: 
+@21LVA: 
+@el_pais: 
+@ActualidadRT: 
+@muyinteresante: 
+@JeseRodriguez10: 
+@TownGamePlay: 
+@_danielmartin_: 
+@AlvaroMorata: 
+@LuzuVlogs: 
+@2010MisterChip: 
+@_anapastor_: 
+@marcmarquez93: 
+@AbrahamMateo: 
+@andresiniesta8: 
+@FCBarcelona: 
