@@ -55,6 +55,7 @@ TODO:
 class AlgoMode(Enum):
     MUTUAL_FOLLOWS = 1
     ALL_FOLLOWS = 2
+    USER_INFO = 3
 
 
 #################################################
@@ -82,7 +83,7 @@ def main(argv):
     global FRIENDSHIP_FILE  # global keyword needed for changing its value
 
     try:
-        opts, args = getopt.getopt(argv, "hi:", ["help", "input=", "all", ])
+        opts, args = getopt.getopt(argv, "hi:", ["help", "input=", "all", "userinfo", ])
     except getopt.GetoptError:
         print(logo)
         sys.exit(1)
@@ -92,6 +93,8 @@ def main(argv):
             FRIENDSHIP_FILE = filename[:-4] + '_friendships.txt'
         elif opt in ("--all"):
             mode = AlgoMode.ALL_FOLLOWS
+        elif opt in ("--userinfo"):
+            mode = AlgoMode.USER_INFO
         elif opt in ("-h", "--help"):
             print_help()
 
@@ -129,19 +132,21 @@ def run(filename, mode):
                      wait_on_rate_limit=True,
                      wait_on_rate_limit_notify=True)
 
-    top100 = read_accounts_file(filename)
+    top100 = read_accounts_file(filename, api)
 
     if mode == mode.MUTUAL_FOLLOWS:
         logging.info("Fetching relationships using the mutual follows algorithm")
         fetch_relationships(top100, api)
+        save_to_file(top100)
     elif mode == mode.ALL_FOLLOWS:
         logging.info("Fetching relationships using the all follows algorithm")
         fetch_all_relationships(top100, api)
+        save_to_file(top100)
+    elif mode == mode.USER_INFO:
+        save_user_info(top100)
 
-    save_to_file(top100)
 
-
-def read_accounts_file(filename):
+def read_accounts_file(filename, api):
     """
     Fetchs all the accounts to be analyzed from a file.
 
@@ -158,6 +163,7 @@ def read_accounts_file(filename):
         for user in file:
             user = user.strip()
             top100[user] = {}
+            fetch_user_info(user, top100, api)
 
     logging.info("Twitter accounts file '%s' readed. Number of accounts: %i" % (INPUT_FILE, len(top100)))
 
@@ -234,7 +240,7 @@ def fetch_relationships(top100, api):
     while (curr_user_index < limit):
         source_user = user_accounts[curr_user_index]
         logging.info("CURRENT SOURCE USER: %s" % source_user)
-        fetch_user_info(source_user, top100, api)
+        # fetch_user_info(source_user, top100, api)
         while (next_user_index < limit):
             if (curr_user_index != next_user_index):
                 target_user = user_accounts[next_user_index]
@@ -282,7 +288,7 @@ def fetch_all_relationships(top100, api):
     while (curr_user_index < limit):
         source_user = user_accounts[curr_user_index]
         logging.info("CURRENT SOURCE USER: %s" % source_user)
-        fetch_user_info(source_user, top100, api)
+        # fetch_user_info(source_user, top100, api)
         while (next_user_index < limit):
             if (curr_user_index != next_user_index):
                 target_user = user_accounts[next_user_index]
@@ -314,26 +320,11 @@ def fetch_all_relationships(top100, api):
     logging.info('TOTAL COMPLETED: 100%')
 
 
-def save_to_file(top100):
-    """
-    Exports the top100 dictionary to a file.
-    """
+def save_user_info(top100):
 
     user_accounts = list(top100)
 
     script_dir = os.path.dirname(__file__)  # absolute dir the script is in
-    EXPORT_FILE = EXPORT_FOLER + '/' + FRIENDSHIP_FILE
-
-    with open(os.path.join(script_dir, EXPORT_FILE), 'w+') as file:
-        for user in user_accounts:
-            friends = top100.get(user).get('follows_list')
-            file.write(user + ': ')
-
-            if friends:
-                for friend in friends:
-                    file.write(friend + ' ')
-
-            file.write('\n')
 
     USERS_FILE = FRIENDSHIP_FILE[:-4] + '_users.txt'
     EXPORT_FILE = EXPORT_FOLER + '/' + USERS_FILE
@@ -366,7 +357,33 @@ def save_to_file(top100):
             file.write(favourites)
             file.write('\n')
 
-    logging.info("Process completed. Exported results: %s & %s" % (FRIENDSHIP_FILE, USERS_FILE))
+        logging.info("Process completed. Exported results: %s" % USERS_FILE)
+
+
+def save_to_file(top100):
+    """
+    Exports the top100 dictionary to a file.
+    """
+
+    user_accounts = list(top100)
+
+    script_dir = os.path.dirname(__file__)  # absolute dir the script is in
+    EXPORT_FILE = EXPORT_FOLER + '/' + FRIENDSHIP_FILE
+
+    with open(os.path.join(script_dir, EXPORT_FILE), 'w+') as file:
+        for user in user_accounts:
+            friends = top100.get(user).get('follows_list')
+            file.write(user + ': ')
+
+            if friends:
+                for friend in friends:
+                    file.write(friend + ' ')
+
+            file.write('\n')
+
+    logging.info("Process completed. Exported results: %s" % FRIENDSHIP_FILE)
+
+    save_user_info(top100)
 
 
 def authentication():
