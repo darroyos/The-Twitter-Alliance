@@ -162,8 +162,13 @@ def read_accounts_file(filename, api):
     with open(os.path.join(script_dir, INPUT_FILE), 'r') as file:
         for user in file:
             user = user.strip()
-            top100[user] = {}
-            fetch_user_info(user, top100, api)
+            user = user.split()
+
+            username = user[0]
+            country = user[1]
+
+            top100[username] = {'country': country}
+            fetch_user_info(username, top100, api)
 
     logging.info("Twitter accounts file '%s' readed. Number of accounts: %i" % (INPUT_FILE, len(top100)))
 
@@ -191,6 +196,7 @@ def fetch_user_info(user, top100, api):
     dict_user['follows_list'] = []
     """
 
+    logging.info('Country ' + user + ': ' + dict_user['country'])
     dict_user['followings'] = str(user_item.friends_count)
     logging.info('Followings ' + user + ': ' + dict_user['followings'])
     dict_user['followers'] = str(user_item.followers_count)
@@ -333,6 +339,7 @@ def save_user_info(top100):
         for user in user_accounts:
             user_data = top100.get(user)
 
+            country = user_data.get('country', '0')
             followings = user_data.get('followings', '0')
             followers = user_data.get('followers', '0')
             tweets = user_data.get('tweets', '0')
@@ -342,6 +349,8 @@ def save_user_info(top100):
             favourites = user_data.get('favourites', '0')
 
             file.write(user + ': ')
+            file.write(country)
+            file.write(' ')
             file.write(followings)
             file.write(' ')
             file.write(followers)

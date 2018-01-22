@@ -10,4 +10,5 @@ import scrapy
 
 class TwCounterSpiderItem(scrapy.Item):
     user_accounts = scrapy.Field()
+    country = scrapy.Field()
     filename = scrapy.Field()

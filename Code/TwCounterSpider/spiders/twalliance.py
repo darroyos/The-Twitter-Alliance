@@ -19,9 +19,8 @@ AUTHORS:
 
 WHAT IT DOES:
     It extracts from TwitterCounter.com the 100 Twitter most followed accounts
-    of a given country. If it isn't given any country it just extracts the
-    worldwide top 100. The script exports the results inside the 'twitteralgo'
-    folder.
+    of a given country. It can also extracts the most followed accounts of a list
+    of countries. The script exports the results inside the 'twitteralgo' folder.
 """
 import scrapy
 
@@ -30,24 +29,40 @@ from items import TwCounterSpiderItem
 
 class TwchartSpider(scrapy.Spider):
     name = 'twalliance'
+    url = 'https://twittercounter.com/pages/100/'
 
     def start_requests(self):
-        self.country = getattr(self, 'country', 'global')
+        self.target_country = getattr(self, 'target_country', None)
+        self.list_countries = getattr(self, 'list_countries', None)
+        self.limit = int(getattr(self, 'limit', 100))
         self.filename = getattr(self, 'file', None)
 
-        # In this website web extract the country most famous users
-        url = 'https://twittercounter.com/pages/100/%s' % self.country
+        if self.target_country:
+            # In this website web extract the country most famous users
+            url = TwchartSpider.url + self.target_country
+            request = scrapy.Request(url=url, callback=self.parse, errback=self.handle_error)
+            request.meta['country'] = self.target_country
 
-        yield scrapy.Request(url=url, callback=self.parse, errback=self.handle_error)
+            yield request
+        elif self.list_countries:
+
+            for country in self.list_countries:
+                url = TwchartSpider.url + country
+                request = scrapy.Request(url=url, callback=self.parse, errback=self.handle_error)
+                request.meta['country'] = country
+
+                yield request
 
     def parse(self, response):
         my_selector = response.css("span[itemprop=alternateName]::text")
         tw_accounts = my_selector.extract()
+        tw_accounts = tw_accounts[:self.limit]
 
         # Create an item
         users = TwCounterSpiderItem()
         users['user_accounts'] = tw_accounts  # pass the accounts list
         users['filename'] = self.filename
+        users['country'] = response.meta['country']
 
         yield users  # send it to the pipelines (write it to a file)
 

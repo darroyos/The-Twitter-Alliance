@@ -16,8 +16,8 @@ class TwCounterSpiderPipeline(object):
         script_dir = os.path.dirname(__file__)  # absolute dir the script is in
         EXPORT_FILE = "../TwitterAlliance/top_users/%s" % item['filename']
 
-        with open(os.path.join(script_dir, EXPORT_FILE), "w") as export:
+        with open(os.path.join(script_dir, EXPORT_FILE), "a") as export:
             for user in item['user_accounts']:
-                export.write(user + '\n')
+                export.write(user + ' ' + item['country'] + '\n')
 
         return item
