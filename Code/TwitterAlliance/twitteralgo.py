@@ -61,9 +61,9 @@ class AlgoMode(Enum):
 #################################################
 # Global Configuration
 #################################################
-CONSUMER_TOKEN = '5p3UPD2z1ryjZBm2Vt5XHInSe'
-CONSUMER_SECRET = 'qtTgzazNkmJZTg0gjeT049SKdNSM6pE7LGcLoC4RXNIcv2Jrf8'
-GOOGLE_API_KEY = 'AIzaSyDPkvGLJkvVmKxwjt1vf_BsqFhe1T6HRd4'
+CONSUMER_TOKEN = ''
+CONSUMER_SECRET = ''
+GOOGLE_API_KEY = ''
 
 INPUT_FOLER = 'top_users'
 EXPORT_FOLER = 'results'
